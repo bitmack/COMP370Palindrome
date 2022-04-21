@@ -17,19 +17,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 11
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v3.1.1
         with:
           java-version: '11'
           distribution: 'temurin'
           cache: maven
       - name: Build with Maven
-        run: mvn -B package --file pom.xml
+        run: mvn -B package --file maven.yml
       - name: Codecov
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v3.0.0
         with:
           files: Test Results - PalindromeTest.xml
           directory: ./COMP370Palindrome/Test Results - PalindromeTest.xml
-
-
-
 
