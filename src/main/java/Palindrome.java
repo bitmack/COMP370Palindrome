@@ -24,7 +24,7 @@ public class Palindrome {
 
         // check if palindrome
         while (i < j) {
-            if (input.charAt(i) != input.charAt(j)){
+            if (input.charAt(i) == input.charAt(j)){
                 return false;
             }
             i++;
