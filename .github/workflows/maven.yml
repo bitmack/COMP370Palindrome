@@ -19,11 +19,10 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+      
       - name: Codecov
-        uses: codecov/codecov-action@v2
-
-        $ProgressPreference = 'SilentlyContinue'
-        Invoke-WebRequest -Uri https://uploader.codecov.io/latest/windows/codecov.exe
-        -Outfile codecov.exe
-        .\codecov.exe -t ${2ca6ed2d-68fa-412d-bb9c-463818fb22fa} --url https://<your-codecov-self-hosted-url>
-
+        uses: codecov/codecov-action@v3.0.0
+        with:
+         files: temp-testng-customsuite.xml
+         directory: ./temp-testng-customsuite.xml
+      
