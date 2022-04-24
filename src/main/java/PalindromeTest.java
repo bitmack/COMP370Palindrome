@@ -1,5 +1,7 @@
-import org.junit.*;
-import static org.junit.Assert.*;
+import org.testng.annotations.Test;
+
+import static org.testng.AssertJUnit.assertTrue;
+
 public class PalindromeTest {
     private Palindrome palindrome = new Palindrome();
     private String str = null;
