@@ -24,5 +24,5 @@ jobs:
         uses: codecov/codecov-action@v3.0.0
         with:
          files: Test Results - PalindromeTest.xml
-         directory: ./COMP370Palindrome/Test Results - PalindromeTest.xml
+         directory: ./IntelliJIdea2022.1/temp-testng-customsuite.xml
       
