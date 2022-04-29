@@ -1,6 +1,6 @@
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.testng.AssertJUnit.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PalindromeTest {
     private Palindrome palindrome = new Palindrome();
