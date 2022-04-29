@@ -27,7 +27,9 @@ jobs:
 
       - name: Upload Code Coverage
         uses: codecov/codecov-action@v3.1.0
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Submit coverage report
-         run: bash <(curl -s https://codecov.io/bash)
+        run: bash <(curl -s https://codecov.io/bash)
       
