@@ -8,6 +8,6 @@ public class PalindromeTest {
     @Test
     public void testPalindrome() throws Exception{
         str = "tacocat";
-        assertTrue(palindrome.isPalindrome(str));
+        assertTrue(Palindrome.isPalindrome(str));
     }
 }
