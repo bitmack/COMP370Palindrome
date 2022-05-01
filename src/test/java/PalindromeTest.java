@@ -1,5 +1,4 @@
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PalindromeTest {
@@ -8,6 +7,6 @@ public class PalindromeTest {
     @Test
     public void testPalindrome() throws Exception{
         str = "tacocat";
-        assertTrue(palindrome.isPalindrome(str));
+        assertTrue(Palindrome.isPalindrome(str));
     }
 }
